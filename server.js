@@ -65,7 +65,7 @@ const employeeByDepartment = () => {
             .prompt({
                 name: 'chosenDepartment',
                 type: 'list',
-                message: 'Which Department would you like to view the employees of?',
+                message: 'Which Department would you like to view?',
                 choices() {
                     const departmentArray = [];
                     res.forEach(({ department_name }) => {

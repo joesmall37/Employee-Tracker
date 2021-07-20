@@ -65,19 +65,19 @@ CREATE TABLE department
             INSERT INTO role
                 (title, salary, department_id)
             VALUES
-                ("Managing Director", 1500000, 2),
+                ("Managing Director", 3000000, 2),
                 ("Director", 1000000, 2),
                 ("Vice President", 190000, 1),
-                ("Analyst", 80000, 2),
-                ("Senior Developer", 1100000, 3),
-                ("Junior Developer", 85000, 3),
+                ("Senior Analyst", 80000, 2),
+                ("Senior Engineer", 1100000, 3),
+                ("Junior Engineerr", 85000, 3),
                 ("Product Manager", 110000, 3),
-                ("Intern", 30000, 3),
+                ("Junior Analyst", 30000, 3),
                 ("Intern", 28000, 1);
 
             INSERT INTO employee
                 (first_name, last_name, role_id, manager_id, department_id)
             VALUES
                 ("Sidney", "Silverstien", 2, 1,1),
-                ("James", "Decker", 2, 3 3),
+                ("James", "Decker", 2, 3, 3),
                 ("Mason", "Nixon", 1, 2, 2);
