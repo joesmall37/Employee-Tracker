@@ -14,22 +14,22 @@ CREATE TABLE role (
     title VARCHAR (30) NOT NULL,
     salary INT NOT NULL,
     department_id INT NOT NULL,
-    INDEX role_id (department_id),
-    FOREIGN KEY (department_id)
-    REFERENCES (department_id) ON DELETE CASCADE,
-    PRIMARY KEY (id),
+    INDEX role_id department_id,
+    FOREIGN KEY department_id
+    REFERENCES department_id,
+    PRIMARY KEY id,
 );
 CREATE TABLE employee (
     id INT NOT NULL,
     first_name VARCHAR (30) NOT NULL,
     last_name VARCHAR (30) NOT NULL,
     role_id INT NOT NULL,
-    INDEX role_ind (role_id),
-    FOREIGN KEY (role_id),
-    REFERENCES role (id),
+    INDEX role_id role_id,
+    FOREIGN KEY role_id,
+    REFERENCES role id,
     ONDELETE CASCADE,
     manager_id INT NULL,
-    PRIMARY KEY (id)
+    PRIMARY KEY id,
 );
 
             INSERT INTO department
